@@ -5,7 +5,7 @@ function fibonacci(){
         document.getElementById('result').textContent = `O número ${num} pertence à sequência de Fibonacci.`;
         return;
     }
-    
+
     let a = 0, b = 1, c = 0;
 
     while (true) {
@@ -20,5 +20,17 @@ function fibonacci(){
             document.getElementById('result').textContent = `O número ${num} não pertence à sequência de Fibonacci.`;
           return false;
         }
+    }
+}
+
+function countAs(){
+    const setence = document.getElementById('textQ2').value;
+    const regex = /a/gi;
+    const count = (setence.match(regex));
+    if(count!=0 && count !=null){
+        const quant = count.length;
+        document.getElementById('result2').textContent = `A letra 'a' aparece ${quant} vez(es) na setença digitada.`;
+    }else{
+        document.getElementById('result2').textContent = `A letra 'a' não apareceu na setença digitada.`;
     }
 }
