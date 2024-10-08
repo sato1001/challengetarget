@@ -34,3 +34,15 @@ function countAs(){
         document.getElementById('result2').textContent = `A letra 'a' não apareceu na setença digitada.`;
     }
 }
+
+function result(){
+    const indice = 12;
+    let soma = 0, k=1;
+    while(k<indice){
+        k=k+1;
+        soma=soma+k;
+    }
+    console.log(soma);
+    document.getElementById('result3').textContent = `Soma: ${soma}`;
+
+}
